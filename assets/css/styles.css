@@ -1,0 +1,260 @@
+/* ==============================
+   RESET BÁSICO
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   BODY
+============================== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: #343a40;
+    line-height: 1.5;
+}
+
+/* ==============================
+   CONTENEDOR GENERAL
+============================== */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==============================
+   HEADER
+============================== */
+.header {
+    background-color: #d2f3e8;
+    padding: 15px 40px;
+    border-bottom: 1px solid #dee2e6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 75px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: fantasy;
+    color: #Efb810;
+    
+}
+
+/* NAV */
+.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight:bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #495057;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #72ad9a;
+}
+
+/* ==============================
+   BOTONES
+============================== */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid #Efb810;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #035d4d, #05816a );
+    color: white;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #Efb810;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #035d4d, #05816a );
+    
+    color: white;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+/* ==============================
+   MAIN
+============================== */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-image:url("../img/fondo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ==============================
+   FORM SECTION
+============================== */
+.form-section {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Card estilo Bootstrap */
+.form-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid #Efb810;
+
+    /* Box Model */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header del formulario */
+.form-header {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.form-header h2 {
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+}
+
+.form-header p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* ==============================
+   FORMULARIO
+============================== */
+.register-form {
+    width: 100%;
+}
+
+/* Grupo de campos */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Inputs */
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid #Efb810;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+/* Focus estilo Bootstrap */
+.form-group input:focus {
+    outline: none;
+    border-color: #6f42c1;
+    box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.2);
+}
+
+/* ==============================
+   FOOTER FORM
+============================== */
+.form-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.form-footer a {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   FOOTER GENERAL
+============================== */
+.footer {
+    background-color: #d2f3e8;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+}
